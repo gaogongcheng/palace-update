@@ -1,14 +1,14 @@
 {
-  "version": "1.7",
+  "version": "1.8",
   "name": "成哥出品",
   "min_apk_version": 3,
-  "url": "https://github.com/gaogongcheng/palace-update/releases/download/v1.7/update.pck",
+  "url": "https://github.com/gaogongcheng/palace-update/releases/download/v1.8/update.pck",
   "mirrors": [
-    "https://github.com/gaogongcheng/palace-update/releases/download/v1.7/update.pck",
-    "https://ghproxy.net/https://github.com/gaogongcheng/palace-update/releases/download/v1.7/update.pck"
+    "https://github.com/gaogongcheng/palace-update/releases/download/v1.8/update.pck",
+    "https://ghproxy.net/https://github.com/gaogongcheng/palace-update/releases/download/v1.8/update.pck"
   ],
-  "description": "修复斜向移动、优化设置间距、调小旁白字体",
+  "description": "CDN加速更新检测，修复斜向移动、优化设置、缩小旁白",
   "release_date": "2026-06-08",
   "file": "update.pck",
-  "filesize": 113199260
+  "filesize": 113198492
 }
