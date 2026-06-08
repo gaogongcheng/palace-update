@@ -1,14 +1,14 @@
 {
-  "version": "1.3",
+  "version": "1.4",
   "name": "成哥出品",
   "min_apk_version": 3,
-  "url": "https://github.com/gaogongcheng/palace-update/releases/download/v1.3/update.pck",
+  "url": "https://github.com/gaogongcheng/palace-update/releases/download/v1.4/update.pck",
   "mirrors": [
-    "https://github.com/gaogongcheng/palace-update/releases/download/v1.3/update.pck",
-    "https://ghproxy.net/https://github.com/gaogongcheng/palace-update/releases/download/v1.3/update.pck"
+    "https://github.com/gaogongcheng/palace-update/releases/download/v1.4/update.pck",
+    "https://ghproxy.net/https://github.com/gaogongcheng/palace-update/releases/download/v1.4/update.pck"
   ],
-  "description": "优化设置界面间距，支持斜向移动，调小旁白字体",
+  "description": "多重校验更新系统，彻底解决更新检测问题",
   "release_date": "2026-06-08",
   "file": "update.pck",
-  "filesize": 113206844
+  "filesize": 113200652
 }
