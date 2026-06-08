@@ -1,0 +1,67 @@
+name: 🚀 Deploy Game Updates to GitHub Pages
+
+# 当推送 version.json 或 update.pck 到 main 分支时自动部署
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'version.json'
+      - 'update.pck'
+      - 'index.html'
+  # 也支持手动触发
+  workflow_dispatch:
+
+# 设置 GITHUB_TOKEN 的写入权限以部署到 GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 确保同一时间只有一个部署
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # 部署到 GitHub Pages
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout 仓库
+        uses: actions/checkout@v4
+
+      - name: 📋 显示部署信息
+        run: |
+          echo "=== 部署的游戏文件 ==="
+          ls -lh update.pck 2>/dev/null || echo "⚠️ 没有 update.pck 文件（纯版本更新）"
+          echo ""
+          echo "=== version.json 内容 ==="
+          cat version.json
+
+      - name: 🔧 设置 Pages
+        uses: actions/configure-pages@v4
+
+      - name: 📤 上传到 Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+          # 只上传以下文件：
+          # - version.json（版本信息）
+          # - update.pck（更新包）
+          # - index.html（状态页）
+
+      - name: 🌐 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: ✅ 部署完成
+        run: |
+          echo "============================================"
+          echo "  🎉 更新已部署！"
+          echo "  更新地址: https://gaogongcheng.github.io/palace-update/"
+          echo "  版本信息: https://gaogongcheng.github.io/palace-update/version.json"
+          echo "  游戏玩家将在下次启动游戏时收到更新通知"
+          echo "============================================"

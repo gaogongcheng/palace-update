@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成哥出品 - 游戏更新服务器</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background: #1a1a2e; color: #eee; }
+        h1 { color: #e94560; }
+        .info { background: #16213e; padding: 20px; border-radius: 10px; margin: 20px auto; max-width: 500px; }
+        code { background: #0f3460; padding: 2px 8px; border-radius: 4px; }
+        a { color: #e94560; }
+    </style>
+</head>
+<body>
+    <h1>🎮 成哥出品</h1>
+    <div class="info">
+        <p>这是游戏的热更新服务器</p>
+        <p>游戏客户端会自动检查 <code>version.json</code> 来获取最新版本</p>
+        <p>当前最新版本: <strong id="ver">加载中...</strong></p>
+    </div>
+    <p style="margin-top: 30px; color: #666; font-size: 12px;">
+        Powered by GitHub Pages | <a href="https://github.com/gaogongcheng/palace-update">GitHub Repo</a>
+    </p>
+    <script>
+        fetch('version.json')
+            .then(r => r.json())
+            .then(d => {
+                document.getElementById('ver').textContent = 'v' + d.version + ' - ' + d.description;
+            })
+            .catch(() => {
+                document.getElementById('ver').textContent = '加载失败';
+            });
+    </script>
+</body>
+</html>
