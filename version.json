@@ -1,10 +1,10 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "name": "成哥出品",
   "min_apk_version": 1,
-  "url": "",
-  "description": "初始版本",
+  "url": "https://github.com/gaogongcheng/palace-update/releases/download/v1.1/update.pck",
+  "description": "新增虚拟摇杆触控系统，优化设置界面",
   "release_date": "2026-06-08",
   "file": "update.pck",
-  "filesize": 0
+  "filesize": 113202604
 }
