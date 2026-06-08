@@ -4,7 +4,10 @@
   "min_apk_version": 2,
   "url": "https://github.com/gaogongcheng/palace-update/releases/download/v1.2/update.pck",
   "mirrors": [
-    "https://github.com/gaogongcheng/palace-update/releases/download/v1.2/update.pck"
+    "https://github.com/gaogongcheng/palace-update/releases/download/v1.2/update.pck",
+    "https://ghproxy.net/https://github.com/gaogongcheng/palace-update/releases/download/v1.2/update.pck",
+    "https://ghproxy.com/https://github.com/gaogongcheng/palace-update/releases/download/v1.2/update.pck",
+    "https://mirror.ghproxy.com/https://github.com/gaogongcheng/palace-update/releases/download/v1.2/update.pck"
   ],
   "description": "修复触摸移动与摇杆冲突，优化设置界面布局，新增版本查询和更新检测",
   "release_date": "2026-06-08",
