@@ -1,14 +1,16 @@
 {
-  "version": "1.9",
+  "version": "1.10",
   "name": "成哥出品",
   "min_apk_version": 3,
-  "url": "https://github.com/gaogongcheng/palace-update/releases/download/v1.9/update.pck",
+  "url": "https://github.com/gaogongcheng/palace-update/releases/download/v1.10/update.pck",
   "mirrors": [
-    "https://github.com/gaogongcheng/palace-update/releases/download/v1.9/update.pck",
-    "https://ghproxy.net/https://github.com/gaogongcheng/palace-update/releases/download/v1.9/update.pck"
+    "https://github.com/gaogongcheng/palace-update/releases/download/v1.10/update.pck",
+    "https://ghproxy.net/https://github.com/gaogongcheng/palace-update/releases/download/v1.10/update.pck",
+    "https://gh-proxy.com/https://github.com/gaogongcheng/palace-update/releases/download/v1.10/update.pck",
+    "https://gh.llkk.cc/https://github.com/gaogongcheng/palace-update/releases/download/v1.10/update.pck"
   ],
-  "description": "GitHub API检查+斜向移动+优化设置+旁白缩小",
+  "description": "进度条显示+5个下载镜像",
   "release_date": "2026-06-08",
   "file": "update.pck",
-  "filesize": 113198492
+  "filesize": 113200636
 }
