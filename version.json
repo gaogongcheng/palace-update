@@ -1,14 +1,13 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "name": "成哥出品",
-  "min_apk_version": 1,
-  "url": "https://github.com/gaogongcheng/palace-update/releases/download/v1.1/update.pck",
+  "min_apk_version": 2,
+  "url": "https://github.com/gaogongcheng/palace-update/releases/download/v1.2/update.pck",
   "mirrors": [
-    "https://github.com/gaogongcheng/palace-update/releases/download/v1.1/update.pck",
-    "https://objects.githubusercontent.com/github-production-release-asset-2e65be/123456789/00000000-0000-0000-0000-000000000000?response-content-disposition=attachment%3B%20filename%3Dupdate.pck"
+    "https://github.com/gaogongcheng/palace-update/releases/download/v1.2/update.pck"
   ],
-  "description": "新增虚拟摇杆触控系统，优化设置界面",
+  "description": "修复触摸移动与摇杆冲突，优化设置界面布局，新增版本查询和更新检测",
   "release_date": "2026-06-08",
   "file": "update.pck",
-  "filesize": 113202604
+  "filesize": 113206844
 }
