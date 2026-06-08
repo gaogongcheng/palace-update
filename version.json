@@ -2,11 +2,10 @@
   "version": "1.10",
   "name": "成哥出品",
   "min_apk_version": 3,
-  "url": "",
+  "url": "https://store1.gofile.io/download/cafc5f2c-2fa4-418c-8fca-e4744845cde8/pck_v110.pck",
   "mirrors": [],
-  "description": "分片下载",
+  "description": "GoFile直链下载",
   "release_date": "2026-06-08",
   "file": "update.pck",
-  "filesize": 113200636,
-  "parts": 2
+  "filesize": 113200636
 }
